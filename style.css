@@ -1,0 +1,154 @@
+body, html {
+    text-align: center;
+    font-family: 'Anton', sans-serif;
+    margin: 0;
+    height: 100%;
+    overflow: hidden;
+    background-color: #1f1e1e;
+}
+
+header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 8em;
+    background-color: #2e3133;
+    margin-bottom: 20px;
+    border-bottom: 3px solid rgb(102, 114, 102);
+}
+
+h1 {
+    display: inline;
+    font-weight: lighter;
+    font-size: 65px;
+    margin: 0;
+    color: rgb(228, 215, 215);
+}
+
+input[type=text] {
+    border: 1px solid rgb(134, 134, 134);
+    padding: 10px;
+    color: rgb(228, 215, 215);
+    font-size: 20px;
+    background-color: #1f1e1e;
+    border-radius: 5px;
+}
+
+input[type=button] {
+    font-size: 20px;
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:20px 0.1em 0.1em 0;
+    border:0.16em solid rgba(255,255,255,0);
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+    background-color:#37a037
+}
+
+input[type=radio] {
+    transform: scale(1.3);
+}
+
+label {
+    font-size: 30px;
+    color: rgb(228, 215, 215);
+}
+
+#book-button {
+    font-size: 25px;
+    display:inline-block;
+    padding:0.3em 1.2em;
+    margin:0 0.1em 0.1em 0;
+    border:0.1em solid rgba(255,255,255,0);
+    border-radius:2em;
+    box-sizing: border-box;
+    text-decoration:none;
+    font-family:'Roboto',sans-serif;
+    font-weight:300;
+    color:#FFFFFF;
+    text-shadow: 0 0.04em 0.04em rgba(0,0,0,0.35);
+    text-align:center;
+    transition: all 0.2s;
+    background-color:#37a037
+}
+
+#book-button:hover {
+    border: 0.1em solid rgba(255,255,255,1);
+}
+
+#book-grid {
+    display: grid;
+    margin: 25px;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, auto);
+    grid-template-rows: auto;
+}
+
+#form-container {
+    display: none;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    position: fixed;
+    z-index: 1;
+    background-color: rgb(0,0,0,0.4);
+}
+
+#form {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    border: 3px rgb(102, 114, 102) solid;
+    padding: 15px;
+    background-color: #2e3133;
+}
+
+.button-row {
+    display: flex;
+    justify-content: center;
+}
+
+.card-text {
+    font-weight: lighter;
+    color:rgb(228, 215, 215);
+    font-size: 32px;
+}
+
+.card-button {
+    background-color: #3a32a3;
+    margin: 0px 10px 10px 10px;
+    border: none;
+    color: rgb(228, 215, 215);
+    padding: 15px 32px;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+.card-button:hover {
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+}
+
+.read-button-active {
+    background-color: rgb(141, 27, 27);
+}
+
+.remove {
+    background-color: rgb(141, 27, 27);
+}
+
+.card {
+    max-width: 25vw;
+    border:rgb(134, 134, 134) solid 2px;
+    border-radius: 5px;
+    background-color: #2e3133;
+}
